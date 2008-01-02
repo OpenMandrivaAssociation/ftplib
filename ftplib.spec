@@ -14,6 +14,7 @@ License:	LGPL
 URL:		http://nbpfaus.net/~pfau/ftplib/
 Source:		http://www.nbpfaus.net/~pfau/ftplib/%name-%version-src.tar.bz2
 Patch0:		http://nbpfaus.net/~pfau/ftplib/ftplib-3.1-1.patch
+BuildRoot:	%{_tmppath}/%{name}-root
 Group:		System/Libraries
 
 %description
