@@ -1,10 +1,11 @@
 
 %define name	ftplib
 %define version	3.1
-%define rel	1
+%define rel	2
 
 %define major	3
-%define libname	%mklibname ftp %major
+%define libname	%mklibname ftp %{major}
+%define develname %mklibname ftp -d
 
 Summary:	FTP Library Routines
 Name:		%name
@@ -41,14 +42,15 @@ protocol is specified in RFC 959.
 This package contains the library needed to run programs dynamically
 linked with ftplib.
 
-%package -n %libname-devel
+%package -n %develname
 Summary:	Headers and static library for ftplib development
 Group:		Development/C
 Requires:	%libname = %version
 Provides:	libftp-devel = %version-%release
 Provides:	ftp-devel = %version-%release
+Obsoletes:	%{_lib}ftp3-devel
 
-%description -n %libname-devel
+%description -n %develname
 This package implements a callable interface to FTP.  The FTP
 protocol is specified in RFC 959.
 
@@ -90,7 +92,7 @@ rm -rf %{buildroot}
 %doc NOTES
 %{_libdir}/*.so.%{major}*
 
-%files -n %libname-devel
+%files -n %develname
 %defattr(-,root,root)
 %doc CHANGES README.ftplib_v3.1 TODO NOTES
 %{_libdir}/*.so
