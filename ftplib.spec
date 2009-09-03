@@ -1,7 +1,7 @@
 
 %define name	ftplib
 %define version	3.1
-%define rel	2
+%define rel	3
 
 %define major	3
 %define libname	%mklibname ftp %{major}
