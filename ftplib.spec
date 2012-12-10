@@ -105,3 +105,34 @@ rm -rf %{buildroot}
 %{_bindir}/qftp
 
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 3.1-4mdv2011.0
++ Revision: 618366
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 3.1-3mdv2010.0
++ Revision: 428963
+- rebuild
+
+* Sun Sep 07 2008 Emmanuel Andry <eandry@mandriva.org> 3.1-2mdv2009.0
++ Revision: 282391
+- apply devel policy
+
+* Mon Jun 09 2008 Pixel <pixel@mandriva.com> 3.1-1mdv2009.0
++ Revision: 217185
+- do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 3.1-1mdv2008.1
++ Revision: 140731
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Nov 04 2006 Anssi Hannula <anssi@mandriva.org> 3.1-1mdv2007.0
++ Revision: 76648
+- Import ftplib
+
