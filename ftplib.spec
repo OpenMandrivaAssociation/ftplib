@@ -5,7 +5,7 @@
 Summary:	FTP Library Routines
 Name:		ftplib
 Version:	4.0
-Release:	1
+Release:	2
 License:	Artistic
 Group:		System/Libraries
 Url:		http://nbpfaus.net/~pfau/ftplib/
