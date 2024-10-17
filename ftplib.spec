@@ -8,7 +8,7 @@ Version:	4.0
 Release:	2
 License:	Artistic
 Group:		System/Libraries
-Url:		http://nbpfaus.net/~pfau/ftplib/
+Url:		https://nbpfaus.net/~pfau/ftplib/
 Source0:	http://www.nbpfaus.net/~pfau/ftplib/%{name}-%{version}.tar.gz
 
 %description
