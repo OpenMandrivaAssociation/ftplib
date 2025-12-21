@@ -11,6 +11,7 @@ Group:		System/Libraries
 Url:		https://nbpfaus.net/~pfau/ftplib/
 Source0:	http://www.nbpfaus.net/~pfau/ftplib/%{name}-%{version}.tar.gz
 
+BuildRequires:	make
 %description
 This package implements a callable interface to FTP. The FTP
 protocol is specified in RFC 959.
